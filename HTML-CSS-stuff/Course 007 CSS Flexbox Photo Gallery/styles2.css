@@ -1,0 +1,39 @@
+/*Different styling document for index*/
+* {
+    box-sizing: border-box;
+  }
+  body  {
+    margin: 0; /*No Margin*/
+    font-family: sans-serif;
+    background-color: #f5f6f7; 
+  }
+  .header {
+    text-transform: uppercase; /*Make all letters uppercase*/
+    text-align: center; 
+    padding: 32px;
+    background-color: #0a0a23; /*Header bg color*/
+    color: #fff; /*Header Text Color*/
+    border-bottom: 4px solid #fdb347; /*Put border under header only*/
+  }
+  .gallery {
+    display: flex;
+    flex-direction: row; /*4 options, it sets the order and how they're displayed*/
+    flex-wrap: wrap; /*If image overflow, use next row*/
+    justify-content: center; /*Put images in center-align*/
+    align-items: center; /*Vertically align images*/
+    padding: 20px 10px; /*Add space around container*/
+    max-width: 1400px; 
+    margin: 0 auto; /*Make sure the container is centered*/
+    gap: 16px; /*Add a gap between each image*/
+} 
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover; /*This maintains each image's aspect ratio - cropped if needed*/
+    border-radius: 10px; /*Smooth out image*/
+}
+.gallery::after { /*adds spacing after last image in gallery container*/
+    content: "";
+    width: 350px;
+  }

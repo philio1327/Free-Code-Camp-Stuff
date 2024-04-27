@@ -1,0 +1,81 @@
+  *{
+    box-sizing: border-box; /*Resize container to specs*/
+  }
+  html {
+    font-size: 16px; /*Ensure readable size*/
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  .label {
+    border: 2px solid black;
+    width: 270px; /*Ensures border is only around text and not device width*/
+    margin: 20px auto; /*Center the container and add 20px margin on top*/
+    padding: 0 7px; /*Add padding before text */
+  }
+  header h1 {
+    text-align: center; /*center the title*/
+    margin: -4px 0 -4px 0; /*Fine-tune header placement*/
+    letter-spacing: 0.15px; /*Space out letters a bit*/
+  }
+  p {
+    margin: 0; /*remove paragraph margins*/
+    display: flex;
+    justify-content: space-between; /*Separates the words within span from words not in span by adding space between*/
+  }
+  .divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0; /*Add divider line: top & bottom, right & left*/ 
+  }
+  .bold {
+    font-weight: 800;
+  }
+  .large {
+    height: 10px; /*for thick divider*/
+  }
+  .large, .medium {
+    background-color: black;/*for dividers*/
+    border: 0;
+  }
+  .small-text {
+    font-size: 0.85rem; /*font size relative to html element*/
+  }
+  .calories-info h2 {
+    margin: 0; /*Remove margin from h2 element*/
+  }
+  .calories-info {
+    display: flex;
+    justify-content: space-between; /*Span number is right justified, word is left*/
+    align-items: flex-end; /*Calorie number is on same line as word Calories*/
+  }
+  .left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700; 
+  }
+  .calories-info span {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: -7px -2px; /*Sometimes you gotta tweak margins to put text in correct spot*/
+  }
+  .medium {
+    height: 5px; /*height of divider below calories*/
+  }
+  .right {
+    justify-content: flex-end; /*Align text right, could use right as well*/
+  }
+  .indent {
+    margin-left: 1em; /*Indent text*/
+  }
+  .daily-value p:not(.no-divider) { /*Adds border if not part of no divider class*/
+    border-bottom: 1px solid #888989;
+  }
+  .double-indent {
+    margin-left: 2em;
+  }
+  .note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px; /*top-bottom, left-right*/
+    text-indent: -8px;
+  }
