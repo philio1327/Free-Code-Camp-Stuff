@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Survey Form</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1 id="title">Which animal do you prefer? Survey</h1>
+            <p id="description">This is a survey to determine the most common animal preferences of the average person.</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name: </label>
+                <input required type="text" id="name" name="name" placeholder="John Doe" />
+                <label for="email" id="email-label">Email: </label>
+                <input required type="email" id="email" name="email" placeholder="email@example.com" />
+                <br><br>
+                <label for="number" id="number-label">How many pets do you have?</label>
+                <input type="number" id="number" name="number" min="0" max="100" placeholder="2" />
+                <br>
+                <label for="dropdown" id="dropdown-label">What type of pet do you have the most of?</label>
+                <select id="dropdown">
+                    <option id="dog" name="dog" value="dog">Dog</option>
+                    <option id="hamster" name="hamster" value="hamster">Hamster</option>
+                    <option id="cat" name="cat" value="cat">Cat</option>
+                    <option id="turtle" name="turtle" value="turtle">Turtle</option>
+                    <option id="other" name="other" value="other">Other</option>
+                </select>
+                <fieldset>
+                    <legend>Was this your first time answering this survey?</legend>
+                    <label for="yes-option">Yes</label>
+                    <input id="yes-option" type="radio" name="first-time" value="yes" />
+                    <label for="no-option">No</label>
+                    <input id="no-option" type="radio" name="first-time" value="no" />
+                </fieldset>
+                <fieldset>
+                    <legend>What types of pets do you have?</legend>
+                    <label for="cat1" id="cat1-label">
+                        <input type="checkbox" id="cat1" name="cat1" value="cat1" />
+                        Cat</label><br>
+                    <label for="dog1" id="dog1-label">
+                        <input type="checkbox" id="dog1" name="dog1" value="dog1" />
+                        Dog</label><br>
+                    <label for="hamster1" id="hamster1-label">
+                        <input type="checkbox" id="hamster1" name="hamster1" value="hamster1" />
+                        Hamster</label><br>
+                    <label for="turtle1" id="turtle1-label">
+                        <input type="checkbox" id="turtle1" name="turtle1" value="turtle1" />
+                        Turtle</label><br>
+                    <label for="other1" id="other1-label">
+                        <input type="checkbox" id="other1" name="other1" value="other1" />
+                        Other</label>
+                </fieldset>
+                <label for="comments">Other Comments?</label><br>
+                <textarea cols="30" rows="10" name="comments" id="comments"></textarea><br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
