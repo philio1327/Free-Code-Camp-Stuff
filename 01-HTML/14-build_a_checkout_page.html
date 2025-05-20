@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Jumbled 3-D Rubik's Cube with rows physically unaligned and unsolved" />
+            <figcaption>3D Rubik's Cube</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form id="payment-information">
+            <label for="card-name" id="card-name-label">Card Name</label>
+            <input type="text" 
+            id="card-name" 
+            name="card-name" 
+            placeholder="John Doe" 
+            required
+            aria-required="true"/> <br><br>
+            <label for="card-number" id="card-number-label">Card Number</label>
+            <input id="card-number" 
+            name="card-number" 
+            type="text"
+            maxlength="16"
+            pattern="\d{16}"
+            inputmode="numeric"
+            placeholder="1234 5678 9012 3456"
+            autocomplete="cc-number"
+            required
+            aria-required="true"/>
+        </form>
+    </section>
+
+</body>
+
+</html>
