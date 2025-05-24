@@ -4,6 +4,9 @@
     width: 500px;
     border: 2px solid black;
     box-sizing: border-box;
+    background-color: #e3d18a;
+    box-shadow: 3px 3px black;
+    font-family: Tahoma;
 }
 
 #confidential,
@@ -11,9 +14,14 @@
     display: inline-block;
     padding: 5px;
     margin-left: 10px;
-    border: 3px solid grey;
+    border: 3px solid red;
     transform: rotate(10deg);
     color: red;
+}
+
+#top-secret {
+    transform: rotate(-10deg);
+    margin: 0 10px 5px 200px;
 }
 
 .blurred {
