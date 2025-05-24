@@ -1,0 +1,136 @@
+/* General Reset and Font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Labels & Inputs */
+label {
+  margin-bottom: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Textarea fix */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Focus and Validation */
+input:focus, textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+
+/* Radio Group */
+.radio-group {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.radio-group label {
+  margin-right: 15px;
+  font-weight: normal;
+}
+/* Align radio buttons and labels horizontally */
+.radio-inline {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+   
+}
+
+/* Prevent labels from wrapping */
+.radio-inline label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  white-space: nowrap;
+}
+/* Normalize radio button size */
+.radio-inline input[type="radio"] {
+  transform: scale(1.75); /* Reset any accidental scale */
+  margin-right: 5px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: lightgreen;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  color: green;
+}
+ input[type="radio"]:checked + label {
+   color: green;
+   font-weight: bold;
+ }
+ input:first-of-type {
+  border-radius: 5px;
+ }
+ /* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="11-build_a_job_application_form.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form method="get" id="form1">
+            <label for="name" id="name-label">Full Name: </label><br>
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <br>
+            <label for="email" id="email-label">Email Address: </label><br>
+            <input type="email" id="email" placeholder="Enter your email" required />
+            <br>
+            <label for="position" id="position-label">Position: </label><br>
+            <select id="position" required>
+                <option value="" disabled selected>Select a Role</option>
+                <option>Developer</option>
+                <option>Manager</option>
+                <option>System Admin</option>
+            </select>
+            <br>
+
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+                <div class="radio-inline">
+                    <input type="radio" name="availability" id="fulltime" value="Full Time" />
+                    <label for="fulltime" id="fulltime-label">Full-Time</label>
+                    <input type="radio" name="availability" id="parttime" value="Part Time" />
+                    <label for="parttime" id="parttime-label">Part-time</label>
+                </div>
+            </fieldset>
+            <label for="message" id="message-label">Why do you want this job?</label><br>
+            <textarea id="message" title="Why do you want this job?" placeholder="Enter your motivation here..."
+                required></textarea>
+            <br>
+            <button type="submit" form="form1" value="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
