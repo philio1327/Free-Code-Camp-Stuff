@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #444;
+}
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.nav-link {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+#main-doc {
+  margin-left: 270px;
+  padding: 40px;
+  max-width: 900px;
+}
+
+.main-section {
+  margin-bottom: 60px;
+}
+
+.main-section header {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+  color: #222;
+}
+p {
+  margin: 10px 0;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #007acc;
+  font-family: Consolas, monospace;
+  overflow-x: auto;
+}
+@media (max-width: 768px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    background-color: #333;
+  }
+
+  #navbar header {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
