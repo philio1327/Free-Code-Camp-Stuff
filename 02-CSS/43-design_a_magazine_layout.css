@@ -1,0 +1,111 @@
+body {
+    font-family: 'Lora', serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.magazine-cover {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title"
+        "feature-article feature-article cover-image"
+        "small-article1 small-article2 cover-image";
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    grid-area: title;
+    font-size: 4em;
+    text-align: center;
+    padding: 20px;
+    background: #ffe28a;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+    font-family: "Great Vibes", cursive;
+}
+
+.feature-article {
+    grid-area: feature-article;
+}
+
+.feature-article p::first-letter {
+    font-family: "Great Vibes", cursive;
+    font-size: 4rem;
+    color: #b85c8d;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+}
+
+.cover-image {
+    grid-area: cover-image;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cover-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.small-article1 {
+    grid-area: small-article1;
+}
+
+.small-article2 {
+    grid-area: small-article2;
+}
+
+.small-article1,
+.small-article2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.feature-article,
+.small-article1,
+.small-article2 {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.feature-article h2 {
+    font-size: 2rem;
+    /* ~32px */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.small-article1 h3,
+.small-article2 h3 {
+    font-size: 1.5rem;
+    /* ~24px */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
