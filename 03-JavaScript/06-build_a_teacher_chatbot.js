@@ -1,8 +1,8 @@
 console.log("Hi there!");
 
-const botName = "teacherBot";
+let botName = "teacherBot";
 
-const greeting = `My name is ${botName}.`;
+let greeting = `My name is ${botName}.`;
 console.log(greeting);
 
 const subject = "JavaScript";
