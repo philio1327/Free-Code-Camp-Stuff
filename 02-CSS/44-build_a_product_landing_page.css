@@ -157,7 +157,7 @@
 
 #video-section iframe {
     width: 100%;
-    max-width: 560px;
+    max-width: 640px;
     /* or your preferred max width */
     height: auto;
     aspect-ratio: 16 / 9;
