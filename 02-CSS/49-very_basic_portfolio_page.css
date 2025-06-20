@@ -1,20 +1,19 @@
-:root {}
-
-#nav-bar {
+#navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
-    /* or match your design */
+    background-color: rgb(156, 65, 65);
     z-index: 1000;
-    /* keeps it above other elements */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* optional, for clarity */
+}
+#welcome-section {
+    padding-top: 60px;
 }
 
 @media (max-width: 600px) {
