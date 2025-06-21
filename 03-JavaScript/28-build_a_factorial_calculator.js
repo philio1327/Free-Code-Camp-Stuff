@@ -1,4 +1,5 @@
 // Better to do this in a different language such as Python to take advantage of value caching, C++ for performance or CPython for a hybrid
+// Python's math module contains the factorial function written in C which runs incredibly fast!
 
 let num = 15;
 
