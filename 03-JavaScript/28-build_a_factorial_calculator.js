@@ -3,9 +3,9 @@
 
 let num = 15;
 
-function factorialCalculator(arg){
+function factorialCalculator(arg) {
   let result = 1;
-  for (let i=1; i<=arg; i++){
+  for (let i = 1; i <= arg; i++) {
     result *= i;
   }
   return result;
