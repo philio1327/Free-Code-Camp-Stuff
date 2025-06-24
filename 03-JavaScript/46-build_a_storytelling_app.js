@@ -27,3 +27,7 @@ function displayStory(genre) {
         storyContainer.style.borderColor = storyObj[genre].borderColor;
     }
 }
+
+scaryStoryBtn.addEventListener("click", () => displayStory("scary"));
+funnyStoryBtn.addEventListener("click", () => displayStory("funny"));
+adventureStoryBtn.addEventListener("click", () => displayStory("adventure"));
