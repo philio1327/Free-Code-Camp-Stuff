@@ -1,0 +1,22 @@
+:root {
+    font-family: "Poppins", sans-serif;
+}
+
+#text-input {
+    margin: auto;
+    display: flex;
+}
+
+#char-count {
+    margin: auto;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
