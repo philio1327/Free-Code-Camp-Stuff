@@ -1,0 +1,15 @@
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: #de75e6;
+}
+
+.gallery-item {
+    width: 100px;
+    height: auto;
+}
