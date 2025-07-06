@@ -1,15 +1,15 @@
 const permuteString = (string, prefix = "", arr = new Set()) => {
-  if (string.length === 0) {
-    arr.add(prefix);
-    
-  } else {
-    for (let i = 0; i < string.length; i++) {
-      const char = string[i];
-      const remaining = string.slice(0, i) + string.slice(i + 1);
-      permuteString(remaining, prefix + char, arr)
+    if (string.length === 0) {
+        arr.add(prefix);
+
+    } else {
+        for (let i = 0; i < string.length; i++) {
+            const char = string[i];
+            const remaining = string.slice(0, i) + string.slice(i + 1);
+            permuteString(remaining, prefix + char, arr)
+        }
     }
-  }
-  return Array.from(arr); 
+    return Array.from(arr);
 }
 
 /* 
